@@ -7,27 +7,38 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.atul.serverdatadelete.MainActivity">
+    tools:context="com.example.atul.serverdatadelete.MainActivity"
+    android:background="@color/bgregister">
 
-    <EditText
+<EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="10sp"
+        android:layout_marginTop="80sp"
+        android:background="@color/white"
+        android:hint="@string/hint_name"
         android:id="@+id/name"
+        android:padding="10sp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="41dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:hint="@string/hint_email"
         android:id="@+id/email"
+        android:layout_marginTop="49dp"
+        android:inputType="textEmailAddress"
+        android:padding="10sp"
+        android:singleLine="true"
+        android:textColor="@color/inputlogin"
         android:layout_below="@+id/name"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="51dp"
         android:layout_alignRight="@+id/name"
         android:layout_alignEnd="@+id/name" />
 
@@ -36,6 +47,7 @@
         android:layout_height="wrap_content"
         android:text="Delete"
         android:id="@+id/button"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp" />
 </RelativeLayout>

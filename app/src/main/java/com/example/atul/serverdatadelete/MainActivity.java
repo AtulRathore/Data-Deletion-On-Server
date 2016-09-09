@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
                StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
                    @Override
                    public void onResponse(String s) {
-                       Toast.makeText(MainActivity.this, "Registration Successfull !!", Toast.LENGTH_SHORT).show();
+                       Toast.makeText(MainActivity.this, "User Deleted!!", Toast.LENGTH_SHORT).show();
 
                    }
                }, new Response.ErrorListener() {
